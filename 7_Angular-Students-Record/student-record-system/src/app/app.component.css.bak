@@ -1,0 +1,97 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-list {
+  display: block; /* Display as block-level element */
+  margin-top: 20px;
+}
+
+.student-box {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.student-box:hover {
+  transform: translateY(-5px);
+}
+
+.student-details {
+  margin-bottom: 10px;
+}
+
+.student-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.student-roll {
+  font-size: 16px;
+  color: #666;
+}
+
+.student-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}

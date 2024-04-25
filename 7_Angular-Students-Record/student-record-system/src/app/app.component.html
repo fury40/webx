@@ -1,0 +1,174 @@
+<!-- <div class="container">
+  <h1>Student Record System</h1>
+  <div class="actions">
+    <button class="btn" (click)="showAddForm()">Add Student</button>
+  </div>
+  <div class="form-container" *ngIf="showAddFormFlag">
+    <h2>Add Student</h2>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Name"
+        [(ngModel)]="newStudent.name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Roll Number"
+        [(ngModel)]="newStudent.rollNumber"
+      />
+    </div>
+    <button class="btn" (click)="addStudent()">Save</button>
+  </div>
+  <div class="clearfix"></div>
+  <div class="student-list">
+    <h2>Student List</h2>
+    <div class="student-box" *ngFor="let student of students">
+      <div class="student-details">
+        <span class="student-name">{{ student.name }}</span>
+        <span class="student-roll">Roll Number: {{ student.rollNumber }}</span>
+      </div>
+      <div class="student-actions">
+        <button class="btn btn-secondary" (click)="editStudent(student)">
+          Edit
+        </button>
+        <button class="btn btn-danger" (click)="deleteStudent(student)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="form-container" *ngIf="showEditFormFlag">
+    <h2>Edit Student</h2>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="selectedStudent.name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="selectedStudent.rollNumber"
+      />
+    </div>
+    <button class="btn" (click)="updateStudent()">Update</button>
+  </div>
+</div> -->
+
+<!-- app.component.html -->
+<div class="container">
+  <h1>Student Record System</h1>
+  <div class="actions">
+    <button class="btn" (click)="showAddForm()">Add Student</button>
+  </div>
+  <div class="form-container" *ngIf="showAddFormFlag">
+    <h2>Add Student</h2>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Name"
+        [(ngModel)]="newStudent.name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Roll Number"
+        [(ngModel)]="newStudent.rollNumber"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="email"
+        placeholder="Enter Email"
+        [(ngModel)]="newStudent.email"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="number"
+        placeholder="Enter Semester"
+        [(ngModel)]="newStudent.semester"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Division"
+        [(ngModel)]="newStudent.division"
+      />
+    </div>
+    <button class="btn" (click)="addStudent()">Save</button>
+  </div>
+  <div class="clearfix"></div>
+  <div class="student-list">
+    <h2>Student List</h2>
+    <div class="student-box" *ngFor="let student of students">
+      <div class="student-details">
+        <span class="student-name">{{ student.name }}</span>
+        <span class="student-roll">Roll Number: {{ student.rollNumber }}</span>
+        <span class="student-email">Email: {{ student.email }}</span>
+        <span class="student-semester">Semester: {{ student.semester }}</span>
+        <span class="student-division">Division: {{ student.division }}</span>
+      </div>
+      <div class="student-actions">
+        <button class="btn btn-secondary" (click)="editStudent(student)">
+          Edit
+        </button>
+        <button class="btn btn-danger" (click)="deleteStudent(student)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="form-container" *ngIf="showEditFormFlag">
+    <h2>Edit Student</h2>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="selectedStudent.name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="selectedStudent.rollNumber"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="email"
+        [(ngModel)]="selectedStudent.email"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="number"
+        [(ngModel)]="selectedStudent.semester"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="selectedStudent.division"
+      />
+    </div>
+    <button class="btn" (click)="updateStudent()">Update</button>
+  </div>
+</div>
