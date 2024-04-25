@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 50px auto; /* Center horizontally with some top margin */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form styles */
+form {
+  max-width: 500px; /* Limit form width */
+  margin: 0 auto; /* Center form */
+}
+
+label {
+  display: block; /* Separate labels onto new lines */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}

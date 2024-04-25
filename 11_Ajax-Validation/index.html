@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>User Validation</h2>
+      <form id="loginForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="validationResult"></div>
+    </div>
+  </body>
+</html>

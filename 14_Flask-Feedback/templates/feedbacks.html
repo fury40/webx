@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Feedbacks</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .feedback {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>All Feedbacks</h1>
+      {% for feedback in feedbacks %}
+      <div class="feedback">
+        <h2>{{ feedback.name }}</h2>
+        <p><strong>Email:</strong> {{ feedback.email }}</p>
+        <p><strong>Mobile:</strong> {{ feedback.mobile }}</p>
+        <p><strong>Age:</strong> {{ feedback.age }}</p>
+        <p><strong>Gender:</strong> {{ feedback.gender }}</p>
+        <p><strong>Feedback:</strong> {{ feedback.feedback }}</p>
+        <p><strong>Privacy Policy:</strong> {{ feedback.privacy_policy }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

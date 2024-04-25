@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Car Management</h1>
+    <form id="carForm">
+      <input type="text" id="make" placeholder="Make" required />
+      <input type="text" id="model" placeholder="Model" required />
+      <input type="number" id="year" placeholder="Year" required />
+      <button type="submit">Add Car</button>
+    </form>
+    <table id="carTable">
+      <thead>
+        <tr>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="carList"></tbody>
+    </table>
+    <script src="app.js"></script>
+  </body>
+</html>

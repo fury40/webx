@@ -1,0 +1,52 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+main {
+  flex: 1; /* Main content area takes up remaining space */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
